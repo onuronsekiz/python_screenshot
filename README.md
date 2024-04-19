@@ -1,4 +1,4 @@
-# Screenshot with mouse select written in Python3 
+# Screenshot with mouse select for python
 I couldn't find any native python code which takes partial screenshot via mouse selection.
 This project is for just learning purpose, feel free to use it.
 

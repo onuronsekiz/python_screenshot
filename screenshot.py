@@ -50,7 +50,7 @@ def get_screenshot(event):
 	img = ImageGrab.grab(bbox=(topx, topy, botx, boty)) # Actual screenshot
 	img.save(path) #Screenshot save to file
 
-#Create root window
+# Create root window
 root_geometry = str(screen_width) + 'x' + str(screen_height) # Creates a geometric string argument
 root.geometry(root_geometry) # Sets the geometry string value
 
@@ -58,7 +58,7 @@ root.overrideredirect(True)
 root.wait_visibility(root)
 root.attributes("-alpha", 0.25) # Set windows transparent
 
-#Create canvas on root windows
+# Create canvas on root windows
 canvas = tk.Canvas(root, width=screen_width, height=screen_height) # Create canvas
 canvas.config(cursor="cross") # Change mouse pointer to cross
 canvas.pack()

@@ -28,7 +28,7 @@ def update_sel_rect(event):
 
 def get_screen_shot(event):
 	global root
-	global topy, topx, botx, boty
+	global topx, topy, botx, boty
 
 	if topx > botx:
 		topx, botx = botx, topx
@@ -41,7 +41,7 @@ def get_screen_shot(event):
 		botx, boty = screen_width, screen_height
 
 	root.destroy()
-	root.after(100)
+	root.after(10)
 	img = ImageGrab.grab(bbox=(topx, topy, botx, boty))
 	filename = datetime.now().strftime('%Y-%m-%d_%H-%M-%S.png')
 	path = os.path.join(os.path.expanduser('~'),"Pictures",filename) #save file to /home/<user>/Pictures
@@ -52,10 +52,10 @@ root.geometry(root_geometry) #Sets the geometry string value
 
 root.overrideredirect(True)
 root.wait_visibility(root)
-root.attributes("-alpha", 0.25)#Set windows transparent
+root.attributes("-alpha", 0.25) #Set windows transparent
 
-canvas = tk.Canvas(root, width=screen_width, height=screen_height)#Crate canvas
-canvas.config(cursor="cross")#Change mouse pointer to cross
+canvas = tk.Canvas(root, width=screen_width, height=screen_height) #Create canvas
+canvas.config(cursor="cross") #Change mouse pointer to cross
 canvas.pack()
 
 # Create selection rectangle (invisible since corner points are equal).

@@ -3,7 +3,7 @@ I couldn't find any native python code which takes partial screenshot via mouse 
 
 All examples I could find either using scrot, gnome-screenshot, qt, gtk, etc.
 
-This project is for just learning purpose, feel free to use it.
+This project uses only pillow and tkinter and just for learning purposes, feel free to use it.
 
 ## Installation
 1. Download the file *screenshot.py*, and unpack it somewhere.

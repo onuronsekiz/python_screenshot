@@ -44,7 +44,7 @@ def get_screenshot(event):
 		botx, boty = screen_width, screen_height # Coordinates for fullscreen
 
 	root.destroy() # Destroy tkinter, otherwise a transparent window will be on top of desktop
-	root.after(10) ##### Wait for tkinter destruction, increase if you see a tint in your screenshots
+	root.after(15) ##### Wait for tkinter destruction, increase if you see a tint in your screenshots
 	filename = datetime.now().strftime('%Y-%m-%d_%H-%M-%S.png') #filename determine
 	path = os.path.join(os.path.expanduser('~'),"Pictures",filename) #save file to /home/<user>/Pictures
 	img = ImageGrab.grab(bbox=(topx, topy, botx, boty)) # Actual screenshot

@@ -10,6 +10,7 @@ This project is for just learning purpose, feel free to use it.
 5. Double click to ```screenshot.py``` to run the program or use terminal.
 6. Left click and drag mouse to select area. Right click to save partial screenshot. Middle click exits program.
 7. If no area is selected, full screenshot will be saved within right click.
+8. In case you see a transparency tint on your screenshots, increase root.after(value) at line #47.
 
 ## Notes
 Although I have wrote most of codes myself there are some copy+paste too.
